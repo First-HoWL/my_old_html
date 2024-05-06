@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My games</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+		 <h2 id="xex">My Games-все про ігри</h2> 
+
+
+
+
+<div class="slider">
+
+	<div class="item">
+		<img src="img/1.jpg">
+	</div>
+
+
+	<div class="item">
+		<img src="img/2.jpg">
+	</div>
+
+
+	<div class="item">
+		<img src="img/3.jpg">
+	</div>
+
+
+	<div class="item">
+		<img src="img/4.jpg">
+	</div>
+
+
+	<div class="item">
+		<img src="img/5.jpg">
+	</div>
+
+
+
+	<div class="item">
+		<img src="img/6.jpg">
+	</div>
+
+
+	<div class="item">
+		<img src="img/7.jpg">
+	</div>
+
+	<div class="item">
+		<img src="img/8.jpg">
+	</div>
+
+	<div class="item">
+		<img src="img/9.jpg">
+	</div>
+
+	<div class="item">
+		<img src="img/10.jpg">
+	</div>
+
+
+<a class="prev" onclick="minusSlide()">&#10094;</a>
+<a class="next" onclick="plusSlide()">&#10095;</a>
+
+</div>
+
+<div class="slider-dots">
+	<span class="slider-dots_item" onclick="currentSlide(1)"></span>
+	<span class="slider-dots_item" onclick="currentSlide(2)"></span>
+	<span class="slider-dots_item" onclick="currentSlide(3)"></span>
+	<span class="slider-dots_item" onclick="currentSlide(4)"></span>
+	<span class="slider-dots_item" onclick="currentSlide(5)"></span>
+	<span class="slider-dots_item" onclick="currentSlide(6)"></span>
+	<span class="slider-dots_item" onclick="currentSlide(7)"></span>
+	<span class="slider-dots_item" onclick="currentSlide(8)"></span>
+	<span class="slider-dots_item" onclick="currentSlide(9)"></span>
+	<span class="slider-dots_item" onclick="currentSlide(10)"></span>
+</div>
+
+
+<script type="text/javascript">
+	
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+
+function plusSlide(){
+	showSlides(slideIndex += 1);
+}
+
+
+function minusSlide(){
+	showSlides(slideIndex -= 1);
+}
+
+
+
+function currentSlide(n){
+	showSlides(slideIndex = n);
+}
+
+
+
+function showSlides(n){
+	var i;
+	var slides = document.getElementsByClassName("item");
+	var dots = document.getElementsByClassName("slider-dots_item");
+	if(n > slides.length){
+		slideIndex = 1
+
+	}
+	if (n < 1) {
+		slideIndex = slides.length
+	}
+
+	for (i = 0; i < slides.length; i++){
+		slides[i].style.display ="none";
+	}
+
+	for (i = 0; i < dots.length; i++){
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+
+	slides[slideIndex - 1].style.display = "block";
+	dots[slideIndex - 1].className += " active";
+}
+
+</script>
+
+
+
+
+
+<h3 id="start">Жанри ігор</h3>
+	<ul>
+		<li><a href="#odin">Шутер</a></li>
+		<li><a href="#dwa">Хоррор</a></li>
+		<li><a href="#tri">Пісочниця</a></li>
+		<li><a href="#chetiri">Симулятор</a></li>
+	</ul><br>
+<h2 id="odin">Шутери</h2>
+<img src="img/csgo0.jpg" height="170" width="270">
+<img src="img/valorant1.jpg" height="170" width="270">
+<img src="img/call of duty1.jpg" height="170" width="270"> <br>
+
+Шу́тер (англ. shooter game, від shooter — «стрілець») або стрілянка — жанр відеоігор, піджанр action, основу ігровогопроцесу якого складає стрільба зі зброї по цілях, зазвичай вороже налаштованих. Часто основним завданням гравця є знищенняусіх цілей на рівні, або/та набір найбільшої кількості очок, а не проходження сюжету.
+Пращури шутерів з'являлись з 1985 року: «Eidolon» (1985), «Hovertank 3D» (1991), «Catacomb 3-D» (1991). Але справжнім 
+проривом стала гра «Wolfenstein 3D» від «id Software», через статус shareware. Безкоштовна версія гри містила лише один
+епізод («Escape from Wolfenstein»), що складався з 10 рівнів (поверхів). Комерційний випуск гри мав три епізоди, 
+включаючи перший (новими епізодами були «Operation: Eisenfaust» і «Die, Führer, Die»), а також набір додаткових епізодів 
+«The Nocturnal Missions» (що містить «A Dark Secret», «Trail of the Madman» і «Confrontation»). Таким чином, загальна
+кількість рівнів Wolfenstein 3D становила 60, по десять рівнів в кожному епізоді. Гра була випущена на PC і потім 
+портована на комп'ютери Macintosh Apple IIgs, Acorn Archimedes та RiscPC, а також на відеоприставки Super NES, Atari 
+Jaguar, Game Boy Advance та 3DO.<br>
+
+<a href="shoters.html"id="xz">Топ 5</a>     <a href="#start" id="abc">На гору</a>
+<br><br>
+<h2 id="dwa">Хоррор</h2>
+<img src="img/fasmafobia1.jpg" height="170" width="270">
+<img src="img/fasmafobia2.jpg" height="170" width="270">
+<img src="img/fasmafobia3.jpg" height="170" width="270"><br>
+
+Жахи чи хоррор (англ. horror, horror fiction чи «жахливості», іноді й запозичене з англійського «хоррор») — жанр сучасного мистецтва, який призначений налякати, налякати, шокувати чи викликати огиду у своїх читачів чи глядачів, викликавши у них почуття жаху та шоку. Літературний історик Дж. А. Куддон визначив жахи як «фрагмент художньої літератури в прозі змінної довжини … яка шокує чи навіть лякає читача, чи, можливо, викликає почуття огиди чи антипатії». Автори творів у жанрі «жахи» створюють моторошну та лякаючу атмосферу. Страх часто надприродний, хоча може бути не надприродним. Часто головна загроза твору у жанріможе бути витлумачена як метафора великих побоювань суспільства: фільми про зомбі – страх перед канібалізмом, про перевертнів – самого себе, про вампірів – некрофілії, слешери – серійних убивць тощо.<br>
+
+<a href="horrors.html"id="xz">Топ 5</a>     <a href="#start" id="abc">На гору</a>
+<br><br>
+<h2 id="tri">Пісочница</h2>
+<img src="img/minecraft1.jpg" height="170" width="270">
+<img src="img/minecraft2.jpg" height="170" width="270">
+<img src="img/minecraft3.jpg" height="170" width="270"><br>
+
+
+<Пісо́чниця (англ. sandbox) — жанр відеоігор, де гравець має можливість створювати, змінювати або знищувати своє оточення.
+Термін натякає на дитячу пісочницю, де дитина може створювати і знищувати без заданої мети. Хоча поняття «відкритий світ» 
+та«пісочниця» іноді використовуються взаємозамінно, терміни стосуються різних понять і не є синонімами.
+<br>Пісочниця — це жанр відеоігор, в якому на гравця мінімально обмежують, що дозволяє геймеру бродити і змінювати віртуальний
+світ за бажанням. На відміну від гри в стилі прогресії, гра в пісочниці дозволяє геймеру вибирати завдання. Замість розміщення
+сегментованих областей або пронумерованих рівнів гра пісочниці зазвичай відбувається у «світі», до якого геймер має повний
+доступ від початку до кінця.
+У деяких іграх можливо конструювати рівні і місії, випробовувати і грати в них, що зближує пісочницю також з поняттям
+конструктора ігор для програмістів і розробників.
+Жанр «пісочниця» підтримує дуже розвинену функцію ігор-конструкторів. В залежності від гри, можливо, розібрати майже усі
+ігрові об'єкти і ландшафт на ресурси, і створити з них нові об'єкти (англ. crafting). Або, в іграх із стратегічними або
+соціальними елементами, є широкомасштабне управління персонажами та об'єктами. Пісочниця може не залишати перед гравцем
+певних визначених цілей, роблячи його єдиною задачею перебування або виживання в ігровому світі та його дослідження.
+Однак до «пісочниць» не відносять багато ігор жанрів «глобальна стратегія» і MMORPG, хоча вони теж мають розвинену систему
+видобутку ресурсів і крафту.
+Приклади ігор-пісочниць: Minecraft, Garry's Mod, SimCity, The Sims, Dwarf Fortress, Starbound WorldBox
+Ігри-пісочниці з відкритим світом: Crackdown, GTA IV, Second Life.<br>
+
+<a href="pisochnisa.html"id="xz">Топ 5</a>     <a href="#start" id="abc">На гору</a>
+<br><br>
+<h2 id="chetiri">Симулятор</h2>
+<img src="img/simylator1.jpg" height="170" width="270">
+<img src="img/simylator2.webp" height="170" width="270">
+<img src="img/simylator3.jpg" height="170" width="270"><br>
+
+Симуляційна відеогра, або симулятор (англ. Simulation video game) — це жанр відеоігор, характерною особливістю якого є якомога
+<br> точніше відтворення фізичних законів реального світу, властивостей реальних предметів, процесів та подій.<br>
+<br>Історія симуляторів починається водночас з історією відеоігор. У 1947 році було створено електронну гру на базі<br> електронно-променевої трубки — Cathode Ray Tube Amusement Device. Однак сам апарат не мав цифрового процесора для обробки<br> інформації, а використовував аналогові ланцюги для управління електронно-променевою трубкою і формування зображення на екрані.<br> За виглядом він нагадував радар часів Другої світової війни, а для прицілювання використовувалися екранні накладання. З<br> часом почалася розробка симуляторів шахів, переважно у 1950-х роках. Спортивні симулятори зростали в кількості. У 1958 році<br> було випущено Tennis for Two.<br>
+
+<a href="simylators.html" id="xz">Топ 5</a>    <a href="#start" id="abc">На гору</a>
+
+
+</body>
+</html>
