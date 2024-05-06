@@ -1,0 +1,11 @@
+img{
+	margin-right:auto;
+	margin-left:auto;
+	display:block;
+}
+
+body{
+	background-image:url(img/background/background_0.png); 
+} 
+
+#a{font-size:10px ;}
