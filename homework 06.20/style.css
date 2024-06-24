@@ -1,0 +1,82 @@
+body{
+	
+	margin: 0;
+	padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+div.card{
+	background-color: rgb(116, 197, 197);
+	height: 280px;
+	width: 450px;
+	margin-top: 20px;
+	margin-left: 50px;
+	border-radius: 10px;
+	padding-top: 20px;
+}
+
+div.orange_box{
+	width: 70%;
+	background-color: rgb(211, 67, 15);
+	padding: 5px;
+	color: white;
+	padding-left: 40px;
+	margin-left: -20px;
+}
+
+form{
+	padding-top: 15px;
+	padding-left: 20px;
+	width: 60%;
+	display: inline-block;
+}
+
+form > input, span{
+	display: block;
+}
+
+span.h0{
+	color: rgb(17, 80, 80);
+	font-size: 12px;
+}
+
+input.margin{
+	margin-bottom: 13px;
+}
+
+input{
+	border: none;
+	border-bottom: 1px solid rgb(17, 80, 80);
+	background-color: rgb(161, 236, 236);
+	width: 230px;
+	padding: 7px;
+	margin-top: 7px;
+	margin-bottom: 5px;
+}
+
+div.line{
+	padding-top: 20px;
+	display: flex;
+}
+
+input.in_line{
+	border: none;
+	border-bottom: 1px solid rgb(17, 80, 80);
+	background-color: rgb(161, 236, 236);
+	width: 60px;
+	padding: 7px;
+}
+
+div.line > div{
+	margin-right: 10px;
+}
+
+div.icon{
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png);
+	width: 100px;
+	height: 100px;
+	background-size: 120px;
+	position: absolute;
+	left: 400px;
+	top: 220px;
+}
